@@ -41,15 +41,15 @@ PAGE_NO = 1
 STATUS_LIMIT = 4
 
 class MirrorStatus:
-    STATUS_UPLOADING = "Uploading"
-    STATUS_DOWNLOADING = "Downloading"
+    STATUS_UPLOADING = "🫧🅤🅟🅛🅞🅐🅓🅘🅝🅖..."
+    STATUS_DOWNLOADING = "😪🅓🅞🅦🅝🅛🅞🅐🅓🅘🅝🅖..."
     STATUS_CLONING = "Cloning"
     STATUS_QUEUEDL = "DL queued"
     STATUS_QUEUEUP = "UL queued"
     STATUS_PAUSED = "Paused"
     STATUS_ARCHIVING = "Archiving"
-    STATUS_EXTRACTING = "Extracting"
-    STATUS_SPLITTING = "Splitting"
+    STATUS_EXTRACTING = "♻️🅔🅧🅣🅡🅐🅒🅣🅘🅝🅖..."
+    STATUS_SPLITTING = "🪓🅢🅟🅛🅘🅣🅣🅘🅝🅖..."
     STATUS_CHECKING = "CheckUp"
     STATUS_SEEDING = "Seeding"
 
@@ -147,8 +147,8 @@ def progress_bar(pct):
         pct = float(pct.strip('%'))
     p = min(max(pct, 0), 100)
     cFull = int((p + 5)// 10)
-    p_str = '●' * cFull
-    p_str += '○' * (10 - cFull)
+    p_str = '🟦' * cFull
+    p_str += '🟨' * (10 - cFull)
     return p_str
 
 
@@ -157,7 +157,7 @@ def source(self):
 
 
 def get_readable_message():
-    msg = '<b>Powered by Aeon</b>\n\n'
+    msg = '<b>Powered by BEN™</b>\n\n'
     button = None
     tasks = len(download_dict)
     currentTime = get_readable_time(time() - botStartTime)
