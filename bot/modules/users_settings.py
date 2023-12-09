@@ -174,7 +174,7 @@ async def user_settings(client, message):
     user_id = message.from_user.id
     thumbnail = f"Thumbnails/{user_id}.jpg"
     if not ospath.exists(thumbnail):
-        thumbnail = 'https://graph.org/file/73ae908d18c6b38038071.jpg'
+        thumbnail = 'https://telegra.ph/file/f8e65738a362d821362dd.jpg'
     x = await sendMessage(message, msg, button, thumbnail)
     await five_minute_del(message)
     await deleteMessage(x)
